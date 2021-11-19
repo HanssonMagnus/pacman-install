@@ -7,7 +7,11 @@ sudo pacman -Syu
 sudo pacman -S man-db man-pages texinfo tldr
 
 # System
-sudo pacman -S ranger rsync fzf firefox redshift autocutsel openssh network-manager-applet sysstat acpi
+sudo pacman -S ranger rsync fzf firefox redshift autocutsel openssh network-manager-applet sysstat
+sudo pacman -S acpi pacman-contrib
+
+# Utilities
+sudo pacman -S tree xdg-user-dirs
 
 # Audio
 sudo pacman -S pulseaudio pulseaudio-bluetooth pulseaudio-alsa alsa-utils
@@ -16,9 +20,13 @@ sudo pacman -S pulseaudio pulseaudio-bluetooth pulseaudio-alsa alsa-utils
 sudo pacman -S zathura zathura-djvu zathura-pdf-mupdf cmus vlc feh w3m
 
 # Social
-sudo pacman -S irssi
+sudo pacman -S irssi discord signal-desktop
 
 # LaTeX
+sudo pacman -S texlive-most texlive-lang biber
+
+# Laptop (power management)
+sudo pacman -S tlp powertop
 
 # Very necessary
 sudo pacman -S cowsay neofetch
